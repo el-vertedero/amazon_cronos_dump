@@ -1,0 +1,14 @@
+# cronos-user 6.0 NS6572 6436 amz-p,release-keys
+- manufacturer: amazon
+- platform: mt8163
+- codename: cronos
+- flavor: cronos-user
+- release: 7.1.2
+- id: NS6572
+- incremental: 0012718777476
+- tags: amz-p,release-keys
+- fingerprint: Amazon/cronos/cronos:6.0/NS6572/6436N:user/amz-p,release-keys
+- is_ab: false
+- brand: Amazon
+- branch: cronos-user-6.0-NS6572-6436-amz-p,release-keys
+- repo: amazon_cronos_dump
