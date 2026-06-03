@@ -1,0 +1,355 @@
+{
+  "acoustic-model": {
+    "non-speech-pdf": 0,
+    "speech-pdf": 0
+  },
+  "keyword-orchestra": {
+    "buffer-size": 200,
+    "keyword-spotters": [
+      {
+        "classifier": {
+          "type": "exponential-decay",
+          "decay-rate": 0.3
+        },
+        "name": "ALEXA",
+        "spotter": {
+          "classification-thresholds": {
+            "accept-threshold": 0.902,
+            "notify-threshold": 0.7,
+            "overrides": [
+              {
+                "accept-threshold": 0.731,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AlarmState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.731,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AudioPlayerState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.731,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "audio_playback"
+                  }
+                ]
+              }
+            ]
+          },
+          "scorer-index": 1,
+          "keyword-feature-window-length": 100,
+          "keyword-start-scorer-index": 50,
+          "keyword-end-scorer-index": 51,
+          "lock-period": 100
+        }
+      },
+      {
+        "classifier": {
+          "type": "exponential-decay",
+          "decay-rate": 0.3
+        },
+        "name": "AMAZON",
+        "spotter": {
+          "classification-thresholds": {
+            "accept-threshold": 0.85,
+            "notify-threshold": 0.5,
+            "overrides": [
+              {
+                "accept-threshold": 0.782,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AlarmState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.782,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AudioPlayerState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.782,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "audio_playback"
+                  }
+                ]
+              }
+            ]
+          },
+          "scorer-index": 5,
+          "keyword-feature-window-length": 100,
+          "keyword-start-scorer-index": 50,
+          "keyword-end-scorer-index": 51,
+          "lock-period": 100
+        }
+      },
+      {
+        "classifier": {
+          "type": "exponential-decay",
+          "decay-rate": 0.3
+        },
+        "name": "ECHO",
+        "spotter": {
+          "classification-thresholds": {
+            "accept-threshold": 0.916,
+            "notify-threshold": 0.738,
+            "overrides": [
+              {
+                "accept-threshold": 0.853,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AlarmState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.853,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AudioPlayerState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.853,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "audio_playback"
+                  }
+                ]
+              }
+            ]
+          },
+          "scorer-index": 6,
+          "keyword-feature-window-length": 100,
+          "keyword-start-scorer-index": 50,
+          "keyword-end-scorer-index": 51,
+          "lock-period": 100
+        }
+      },
+      {
+        "classifier": {
+          "type": "exponential-decay",
+          "decay-rate": 0.6
+        },
+        "name": "COMPUTER",
+        "spotter": {
+          "classification-thresholds": {
+            "accept-threshold": 0.829,
+            "notify-threshold": 0.525,
+            "overrides": [
+              {
+                "accept-threshold": 0.707,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AlarmState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.707,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AudioPlayerState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.707,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "audio_playback"
+                  }
+                ]
+              }
+            ]
+          },
+          "scorer-index": 7,
+          "keyword-feature-window-length": 100,
+          "keyword-start-scorer-index": 50,
+          "keyword-end-scorer-index": 51,
+          "lock-period": 100
+        }
+      },
+      {
+        "classifier": {
+          "type": "exponential-decay",
+          "decay-rate": 0.6
+        },
+        "name": "STOP",
+        "spotter": {
+          "classification-thresholds": {
+            "accept-threshold": 0.65
+          },
+          "scorer-index": 2,
+          "keyword-feature-window-length": 100,
+          "keyword-start-scorer-index": 50,
+          "keyword-end-scorer-index": 51,
+          "lock-period": 100
+        }
+      },
+      {
+        "classifier": {
+          "type": "weighted-geometric-average-aggregator",
+          "weights": [1, 4]
+        },
+        "name": "HEY_DISNEY",
+        "spotter": {
+          "classification-thresholds": {
+            "accept-threshold": 0.675,
+            "notify-threshold": 0.3,
+            "overrides": [
+              {
+                "accept-threshold": 0.55,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AlarmState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.55,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AudioPlayerState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.55,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "audio_playback"
+                  }
+                ]
+              }
+            ]
+          },
+          "scorer-index-array": [3, 11],
+          "word-score-history-sizes": [100, 1],
+          "posterior-smoothers": [
+            {
+              "type": "exponential-decay",
+              "decay-rate": 0.0
+            },
+            {
+              "type": "exponential-decay",
+              "decay-rate": 0.3
+            }
+          ],
+          "keyword-feature-window-length": 100,
+          "keyword-start-scorer-index": 50,
+          "keyword-end-scorer-index": 51,
+          "lock-period": 100
+        }
+      },
+      {
+        "classifier": {
+          "type": "weighted-geometric-average-aggregator",
+          "weights": [1, 4]
+        },
+        "name": "HEY_SAMUEL",
+        "spotter": {
+          "classification-thresholds": {
+            "accept-threshold": 0.625,
+            "notify-threshold": 0.275,
+            "overrides": [
+              {
+                "accept-threshold": 0.425,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AlarmState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.425,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "AudioPlayerState"
+                  }
+                ]
+              },
+              {
+                "accept-threshold": 0.425,
+                "clientProperties": [
+                  {
+                    "equals": 1,
+                    "name": "audio_playback"
+                  }
+                ]
+              }
+            ]
+          },
+          "scorer-index-array": [3, 4],
+          "word-score-history-sizes": [50, 1],
+          "posterior-smoothers": [
+            {
+              "type": "exponential-decay",
+              "decay-rate": 0.3
+            },
+            {
+              "type": "exponential-decay",
+              "decay-rate": 0.6
+            }
+          ],
+          "keyword-feature-window-length": 100,
+          "keyword-start-scorer-index": 50,
+          "keyword-end-scorer-index": 51,
+          "lock-period": 100
+        }
+      }
+    ]
+  },
+  "keyword-orchestra-monitor": {
+    "statistics": {
+      "classification": {
+        "histogram": {
+          "max": 1,
+          "min": 0,
+          "size": 50
+        }
+      },
+      "segmentation": {
+        "histogram": {
+          "max": 1,
+          "min": 0,
+          "size": 1
+        }
+      }
+    }
+  },
+  "object_type_name": "keyword-spotter-orchestra-config",
+  "object_type_version": 2,
+  "word-symbol-table": {
+    "filename": "words.shrunk.txt"
+  }
+}
