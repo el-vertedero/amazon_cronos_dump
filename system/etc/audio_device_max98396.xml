@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mixercontrol>
+    <versioncontrol value="2.02">
+    </versioncontrol>
+    <!-- These are the initial mixer settings -->
+    <!-- LO out -->
+    <kctl name="Ext_Speaker_Amp_Switch" value="On" />
+    <kctl name="Audio_I2S0dl1_hd_Switch" value="On" />
+    <!-- MAX98396 parameters -->
+    <kctl name="Digital Volume A" value="127" />
+    <kctl name="Speaker Volume A" value="8" />
+    <kctl name="Speaker Safe Mode A" value="Off" />
+    <!-- TLV3101 ADC -->
+    <kctl name="ADC_A Left Ip Select ADC_A DIF1_L switch" value="1" />
+    <kctl name="ADC_A Right Ip Select ADC_A DIF1_R switch" value="1" />
+    <kctl name="ADC_A DIF1_L Input Gain" value="0" />
+    <kctl name="ADC_A DIF1_R Input Gain" value="0" />
+    <kctl name="ADC_A MICPGA Volume Ctrl" value="40" />
+    <kctl name="SpiTimeStamps" value="Off" />
+    <!-- TLV3101 ADC -->
+    <!--external_speaker output-->
+    <path name="ext_speaker_output" value="turnoff">
+    </path>
+    <path name="ext_speaker_output" value="turnon">
+    </path>
+</mixercontrol>
