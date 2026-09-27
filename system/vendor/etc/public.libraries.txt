@@ -1,0 +1,5 @@
+libaudiostream_jni.so
+libopus_jni.so
+libwakewordserver_jni.so
+libmrmaudiotrack.so
+libsmpc_jni.so
